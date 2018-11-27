@@ -1,0 +1,58 @@
+body {
+
+}
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 50px 100px 100px 100px 50px;
+  grid-gap: 4px;
+} */
+.menu {
+  background: #d4d4d4;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.sidebar {
+  background: #2d2d2d;
+  grid-column: 1/2;
+  grid-row: 2/5;
+}
+
+.content {
+  background: red;
+  grid-column: 2/-1;
+}
+
+.footer {
+  background: #f8f8f8;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+html, body, #map {
+  height: 100%;
+  width: 100vw;
+ }
+ body {
+  padding: 0;
+  margin: 0;
+ }  
+
+ .container {
+  display: grid;
+  height: 100%;
+  grid-gap: 4px;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: 60% 40%;
+ }
+ .peta {
+  grid-column: 1/-1;
+ }
+ .gambar {
+  background: green;
+  grid-column: 1/6;
+ }
+ .review {
+  background: yellow;
+  grid-column:6/-1;
+ }
